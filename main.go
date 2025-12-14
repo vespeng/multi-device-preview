@@ -27,7 +27,7 @@ var (
 func main() {
 	// 检查命令行参数
 	if len(os.Args) < 2 {
-		fmt.Println("请提供需要生成预览图的 UR L地址")
+		fmt.Println("请输入需要生成预览图的 URL 地址")
 		fmt.Println("用法: program_name <url>")
 		fmt.Println("示例: program_name http://localhost:8080/")
 		os.Exit(1)
@@ -65,6 +65,7 @@ func execute(url string) error {
 	deviceScreenshots := make(map[string]*image.RGBA)
 
 	// Step 1: 遍历设备并截图
+	fmt.Println("📷 正在截图...")
 	for _, dev := range Devices {
 		wg.Add(1)
 		go func(device DeviceParams) {
