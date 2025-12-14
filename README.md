@@ -3,7 +3,6 @@
 多设备预览图生成器是一个使用 Go 语言开发的命令行工具，它可以截取网站在不同设备上的显示效果，并将它们组合成一张预览图。
 
 ![GitHub](assets/preview.png)
-
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Language](https://img.shields.io/badge/language-Go-orange.svg)
 
