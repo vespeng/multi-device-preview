@@ -210,7 +210,7 @@ func takeScreenshotForDevice(ctx context.Context, url string, width, height int,
 		if err != nil {
 			return nil, err
 		}
-	case "iPad Pro 13":
+	case "IPad Pro 13":
 		err := chromedp.Run(ctx,
 			chromedp.Emulate(device.IPadPro),
 			chromedp.Navigate(url),
@@ -221,7 +221,7 @@ func takeScreenshotForDevice(ctx context.Context, url string, width, height int,
 		if err != nil {
 			return nil, err
 		}
-	case "iPhone 15 Pro":
+	case "IPhone 15 Pro":
 		err := chromedp.Run(ctx,
 			// todo 这里直接使用 15pro 图像不对，暂时用 12pro
 			chromedp.Emulate(device.IPhone12Pro),
@@ -245,7 +245,7 @@ func takeScreenshotForDevice(ctx context.Context, url string, width, height int,
 	draw.Draw(rgba, bounds, img, bounds.Min, draw.Src)
 
 	// 如果是 iPhone 15 Pro，应用圆角效果
-	if deviceName == "iPhone 15 Pro" {
+	if deviceName == "IPhone 15 Pro" {
 		rgba = applyCornerTransparency(rgba, 120.0) // 120.0 是圆角半径
 	}
 

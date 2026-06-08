@@ -30,7 +30,7 @@ var Devices = []DeviceParams{
 		LayoutY:    300,
 	},
 	{
-		Name:       "iPad Pro 13",
+		Name:       "IPad Pro 13",
 		DevicePath: "devices/ipad-pro-13.png",
 		ScreenW:    624,
 		ScreenH:    830,
@@ -40,7 +40,7 @@ var Devices = []DeviceParams{
 		LayoutY:    520,
 	},
 	{
-		Name:       "iPhone 15 Pro",
+		Name:       "IPhone 15 Pro",
 		DevicePath: "devices/iphone-15-pro.png",
 		ScreenW:    275,
 		ScreenH:    594,
