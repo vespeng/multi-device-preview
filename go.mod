@@ -1,11 +1,11 @@
 module multi-device-preview
 
-go 1.25
+go 1.25.0
 
 require (
 	github.com/chromedp/chromedp v0.14.2
 	github.com/disintegration/imaging v1.6.2
-	golang.org/x/image v0.34.0
+	golang.org/x/image v0.38.0
 )
 
 require (
